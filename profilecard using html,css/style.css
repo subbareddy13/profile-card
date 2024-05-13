@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "popping",sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items:center;/*aligning vertically at center*/
+    justify-content:center;/*alligning horizontally at center8/+*/
+    background-color: #fff;
+}
+.image{
+    position: relative;
+    width: 150px;
+    height:150px;
+    border-radius: 50%;
+    background-color:rgb(101, 196, 217);
+    padding: 3px;
+    
+}
+.image .profile-img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+.profile-card{
+    display:flex;
+    flex-direction: column;/*contents will be coli]umn wise*/
+    align-items: center;/*contents will be coli]umn wise*/
+    max-width: 370px;
+    width: 100%;
+    background:rgb(21, 155, 77);
+    border-radius: 26px;
+    padding:25px;
+    box-shadow: 0 5px 15px rgba(53, 50, 50, 0.415);
+    position: relative;
+}
+.profile-card .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+.text-data .name{
+    font-size:22px ;
+    font-weight: 500;
+}
+.text-data .job{
+    font-size: 14px;
+    font-weight: 400;
+}
+.profile-card .media-buttons{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    margin: 15px;
+}
+.media-buttons .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+    height:34px;
+    width:34px;
+    border-radius: 50%;
+    margin:0 8px;
+      background-color: blue;
+      text-decoration: none;
+}
+ .profile-card .buttons{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    padding:5px;
+}
+.buttons .button{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    background-color: #4070f4;
+    border-radius: 24px;
+    margin: 0 10px;
+    padding: 8px 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.buttons .button:hover{
+    background-color: #797d8a;
+}
+.profile-card .analytics{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.analytics .data{
+    display: flex;
+    align-items: center;
+    color: #050404;
+    padding:0 20px;
+    border: 2px solid whi;
+ }
+ .profile-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 36%;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    background-color:rgb(106, 106, 170);
+ }
